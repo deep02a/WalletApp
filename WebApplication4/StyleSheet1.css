@@ -1,0 +1,137 @@
+﻿
+
+.form-box {
+    max-width: 300px;
+    background: #f1f7fe;
+    overflow: hidden;
+    border-radius: 16px;
+    color: #010101;
+    margin: auto;
+    padding: 10px 17px 10px 10px;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 24px;
+    gap: 16px;
+    text-align: center;
+}
+
+/*Form text*/
+.title {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #666;
+}
+
+/*Inputs box*/
+.form-container {
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 1rem 0 .5rem;
+    width: 100%;
+    padding: 5px 5px 5px;
+}
+
+.input {
+    background: none;
+    border: 0;
+    outline: 0;
+    height: 30px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    font-size: 17.5px;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-section {
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 1rem 0 .5rem;
+    width: 100%;
+    padding: 5px 5px 5px;
+    display: none;
+}
+
+/*Button*/
+.btn {
+    background-color: deepskyblue;
+    color: #fff;
+    border: 0;
+    border-radius: 15px;
+    padding: 7px 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 2.5px;
+    margin-bottom: 7px;
+}
+
+    .btn:hover {
+        background-color: #005ce6;
+    }
+
+    .btn:active {
+        opacity: 0.5;
+    }
+
+.btnBackFront {
+    position: absolute;
+    background-color: darkgrey;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: azure;
+    border: 0;
+}
+    .btnBackFront:hover {
+        transform: translateY(3px);
+        box-shadow: none;
+    }
+
+    .btnBackFront:active {
+        opacity: 0.5;
+    }
+
+.label {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 5px;
+    margin-bottom: 0.5px;
+}
+
+.btndft {
+    font-size: 17px;
+    border: 0;
+    background-color: ghostwhite;
+    border-radius: 7px;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 2.5px;
+    margin-bottom: 7px;
+}
+
+p {
+    font-size: 13px;
+    font-family: OpenSans,"Lucida Console","courier new";
+    font-weight:bold;
+
+}
+
+
