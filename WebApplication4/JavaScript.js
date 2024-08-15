@@ -75,3 +75,4 @@ function amount_add() {
 
     document.getElementById("Amount").innerText = ta.toString();
 }
+

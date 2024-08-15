@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection.Emit;
 using System.Web;
@@ -20,11 +21,15 @@ namespace WebApplication4
             if (FileUpload1.HasFile)
             {
                 string Img_name = FileUpload1.FileName;
-                string folder_path = Server.MapPath("userimages");
-                FileUpload1.SaveAs(folder_path + Img_name);
+                string extension = Path.GetExtension(Img_name);
+                string folder_path = Server.MapPath("~/UserInfo/");
+                FileUpload1.PostedFile.SaveAs(folder_path + Img_name);
+                Label1.Visible = true;
+                Label1.Text = "File uploaded";
             }
             else
             {
+                Label1.Visible = true;
                 Label1.Text = "No File Uploaded.";
             }
         }
