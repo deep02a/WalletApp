@@ -23,14 +23,23 @@ namespace WebApplication4
                 string Img_name = FileUpload1.FileName;
                 string extension = Path.GetExtension(Img_name);
                 string folder_path = Server.MapPath("~/UserInfo/");
-                FileUpload1.PostedFile.SaveAs(folder_path + Img_name);
-                Label1.Visible = true;
-                Label1.Text = "File uploaded";
+                
+                if(extension ==".png" || extension==".jpg")
+                {
+                    FileUpload1.PostedFile.SaveAs(folder_path + Img_name);
+                    Label1.Visible = true;
+                    Label1.Text = "File uploaded";
+                }
+                else
+                {
+                    Label1.Visible = true;
+                    Label1.Text = "File is not a image please select your image";
+                }
             }
             else
             {
                 Label1.Visible = true;
-                Label1.Text = "No File Uploaded.";
+                Label1.Text = "No image Uploaded.";
             }
         }
     }

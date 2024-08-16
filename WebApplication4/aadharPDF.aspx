@@ -15,7 +15,8 @@
     <form id="form1" runat="server" class="form">
         <p>Please select your aadhar pdf from your device. </p>
         <asp:FileUpload ID="FileUpload1" runat="server" class=""/> 
-        <asp:Button ID="Button1" CssClass="btn" runat="server" Text="Button" />
+        <asp:Button ID="Button1" CssClass="btn" runat="server" Text="Button" OnClick="Button1_Click" />
+        <asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label>
     </form>
     </div>
 </body>
