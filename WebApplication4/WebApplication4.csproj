@@ -70,10 +70,12 @@
     <Content Include="aadharPDF.aspx" />
     <Content Include="Global.asax" />
     <Content Include="JavaScript.js" />
+    <Content Include="Log in.aspx" />
     <Content Include="PassportPhotoUpload.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="aadharPDF.aspx.cs">
@@ -85,6 +87,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Log in.aspx.cs">
+      <DependentUpon>Log in.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log in.aspx.designer.cs">
+      <DependentUpon>Log in.aspx</DependentUpon>
     </Compile>
     <Compile Include="PassportPhotoUpload.aspx.cs">
       <DependentUpon>PassportPhotoUpload.aspx</DependentUpon>
@@ -100,6 +109,13 @@
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
