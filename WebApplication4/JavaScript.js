@@ -76,3 +76,22 @@ function amount_add() {
     document.getElementById("Amount").innerText = ta.toString();
 }
 
+function emailValidation() {
+    var form = document.getElementById("form1");
+    var email = document.getElementById("EmailId").value;
+    var text = document.getElementById("text");
+    var pattern = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+    if (email.match(pattern)) {
+        text.innerHTML = "Valid Email";
+        text.style.color = "#00ff00";
+    }
+    else {
+        text.innerHTML = "Please Enter valid Email";
+        text.style.color = "#ff0000";
+    }
+    if (email == "") {
+        text.innerHTML = "";
+    }
+}
+

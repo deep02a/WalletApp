@@ -67,26 +67,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="aadharPDF.aspx" />
+    <Content Include="Pdf.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="gridview.aspx" />
     <Content Include="JavaScript.js" />
     <Content Include="Log in.aspx" />
+    <Content Include="MainPage.aspx" />
     <Content Include="PassportPhotoUpload.aspx" />
+    <Content Include="signUp.aspx" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
-    <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="aadharPDF.aspx.cs">
-      <DependentUpon>aadharPDF.aspx</DependentUpon>
+    <Compile Include="Pdf.aspx.cs">
+      <DependentUpon>Pdf.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="aadharPDF.aspx.designer.cs">
-      <DependentUpon>aadharPDF.aspx</DependentUpon>
+    <Compile Include="Pdf.aspx.designer.cs">
+      <DependentUpon>Pdf.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="gridview.aspx.cs">
+      <DependentUpon>gridview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gridview.aspx.designer.cs">
+      <DependentUpon>gridview.aspx</DependentUpon>
     </Compile>
     <Compile Include="Log in.aspx.cs">
       <DependentUpon>Log in.aspx</DependentUpon>
@@ -94,6 +103,13 @@
     </Compile>
     <Compile Include="Log in.aspx.designer.cs">
       <DependentUpon>Log in.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="PassportPhotoUpload.aspx.cs">
       <DependentUpon>PassportPhotoUpload.aspx</DependentUpon>
@@ -103,19 +119,19 @@
       <DependentUpon>PassportPhotoUpload.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="signUp.aspx.cs">
+      <DependentUpon>signUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signUp.aspx.designer.cs">
+      <DependentUpon>signUp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="WebForm1.aspx.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="WebForm2.aspx.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm2.aspx.designer.cs">
-      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
