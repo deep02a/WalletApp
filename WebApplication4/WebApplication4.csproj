@@ -67,11 +67,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="LogIn.aspx" />
     <Content Include="Pdf.aspx" />
     <Content Include="Global.asax" />
     <Content Include="gridview.aspx" />
     <Content Include="JavaScript.js" />
-    <Content Include="Log in.aspx" />
     <Content Include="MainPage.aspx" />
     <Content Include="PassportPhotoUpload.aspx" />
     <Content Include="signUp.aspx" />
@@ -80,6 +80,13 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pdf.aspx.cs">
       <DependentUpon>Pdf.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -96,13 +103,6 @@
     </Compile>
     <Compile Include="gridview.aspx.designer.cs">
       <DependentUpon>gridview.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Log in.aspx.cs">
-      <DependentUpon>Log in.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Log in.aspx.designer.cs">
-      <DependentUpon>Log in.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainPage.aspx.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>
@@ -146,6 +146,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Sql\" />
     <Folder Include="UserInfo\" />
   </ItemGroup>
   <PropertyGroup>
