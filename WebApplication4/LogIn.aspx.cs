@@ -20,11 +20,11 @@ namespace WebApplication4
         {
             con.Open();
             String sql;
-            sql = "select * from details where username='"+ Username.Text+ "' and pass='"+ Password.Text+ "'";
+            sql = "select * from details where email='"+ Email.Text+ "' and pass='"+ Password.Text+ "'";
             SqlCommand cmd = new SqlCommand(sql, con);
             cmd.ExecuteNonQuery();
             con.Close();
-            Response.Redirect("gridview.aspx");
+            
         }
     }
 }
