@@ -12,8 +12,8 @@
         <div class="form-container1">
             <p class="title1">Login</p>
             <div class="input-group">
-			    <label for="Username">Username</label>
-                <asp:TextBox ID="Username" runat="server"></asp:TextBox>
+			    <label for="Email">Email</label>
+                <asp:TextBox ID="Email" runat="server"></asp:TextBox>
 		    </div>
             <div class="input-group">
 	            <label for="Password">Password</label>
