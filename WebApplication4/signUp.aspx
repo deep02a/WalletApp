@@ -23,15 +23,18 @@
 		</div>
 		<div class="input-group">
 			<label for="PhoneNo">Phone Number</label>
-            <asp:TextBox ID="PhoneNo" runat="server"></asp:TextBox>
+            <asp:TextBox ID="PhoneNo" runat="server" onblur="phoneNoVerification()"></asp:TextBox>
+			<span id="text1"></span>
 		</div>
 		<div class="input-group">
 			<label for="Password">Password</label>
-            <asp:TextBox ID="Password" runat="server"></asp:TextBox>
+            <asp:TextBox ID="Password" runat="server" onblur="passwordCheck()"></asp:TextBox>
+			<span id="text2"></span>
 		</div>
 		<div class="input-group">
 			<label for="ConfirmPassword">Confirm Password</label>
-            <asp:TextBox ID="ConfirmPassword" runat="server"></asp:TextBox>
+            <asp:TextBox ID="ConfirmPassword" runat="server" onblur="conPassCheck()"></asp:TextBox>
+			<span id="text3"></span>
 
 			<div class="forgot">
 				<a rel="noopener noreferrer" href="#">Forgot Password ?</a>

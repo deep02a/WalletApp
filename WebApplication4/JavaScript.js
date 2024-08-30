@@ -95,3 +95,60 @@ function emailValidation() {
     }
 }
 
+function phoneNoVerification() {
+    var form = document.getElementById("form1");
+    var phno = document.getElementById("PhoneNo").value;
+    var text1 = document.getElementById("text1");
+    var pattern = /^[\+]?[0-9]{0,3}\W?+[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+
+    if (phno.match(pattern)) {
+        text1.innerHTML = "Valid PhoneNo";
+        text.style.color = "#00ff00";
+    }
+    else {
+        text1.innerHTML = "Please Enter valid PhoneNo";
+        text1.style.color = "#ff0000";
+    }
+    if (phno == "") {
+        text1.innerHTML = "";
+    }
+
+}
+
+function passwordCheck() {
+    var form = document.getElementById("form1");
+    var pass = document.getElementById("Password").value;
+    var text = document.getElementById("text2");
+    var pattern = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+
+    if (pass.match(pattern)) {
+        text.innerHTML = "Valid Password";
+        text.style.color = "#00ff00";
+    }
+    else {
+        text.innerHTML = "Please Enter a password having 8 letters, with at least a Symbol, Upper and Lower case letters and a Number";
+        text.style.color = "#ff0000";
+    }
+    if (pass == "") {
+        text.innerHTML = "";
+    }
+}
+
+function conPassCheck() {
+    var pass = document.getElementById("Password").value;
+    var conpass = document.getElementById("ConfirmPassword").value;
+    var text = document.getElementById("text3");
+
+    if (conpass.match(pass)) {
+        text.innerHTML = "Valid Password";
+        text.style.color = "#00ff00";
+    }
+    else {
+        text.innerHTML = "Please Enter same password";
+        text.style.color = "#ff0000";
+    }
+    if (pass == "") {
+        text.innerHTML = "";
+    }
+}
+
