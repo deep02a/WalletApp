@@ -18,7 +18,7 @@
 		</div>
 		<div class="input-group">
 			<label for="EmailId">Email Id</label>
-            <asp:TextBox ID="EmailId" runat="server" ></asp:TextBox>
+            <asp:TextBox ID="EmailId" runat="server" onblur="emailValidation()" ></asp:TextBox>
 			<span id="text"></span>
 		</div>
 		<div class="input-group">
