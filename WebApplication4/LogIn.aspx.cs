@@ -10,7 +10,7 @@ namespace WebApplication4
 {
     public partial class LogIn : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection("Data Source=DESKTOP-ROLNGQN\\SQLEXPRESS;Initial Catalog=eWallet;User ID=sa;Password=sqlexpress2022;Encrypt=False");
+        SqlConnection con = new SqlConnection("Data Source=DEEPTANSHU\\SQLEXPRESS;Initial Catalog=eWallet;User ID=sa;Password=sqlexpress2022;Encrypt=False");
         protected void Page_Load(object sender, EventArgs e)
         {
 
