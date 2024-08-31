@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1890" height="1417" viewBox="0 0 1890 1417">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffead2;
+      }
+
+      .cls-2 {
+        fill: #ffdc7f;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #78b7d0;
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        filter: url(#filter);
+      }
+
+      .cls-4 {
+        filter: url(#filter-2);
+      }
+    </style>
+    <filter id="filter" x="698.562" y="596" width="75.438" height="102" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="6.932" dy="0.974" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood result="flood" flood-color="#16325b"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="772.531" y="538" width="723.469" height="153" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="12.873" dy="1.809" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood result="flood" flood-color="#16325b"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <circle class="cls-1" cx="1030.5" cy="612.5" r="344.5"/>
+  <circle class="cls-2" cx="851" cy="633" r="165"/>
+  <path id="e" class="cls-3" d="M736.819,668.6q-8.607,11.24-17.718,12.358-8.337,1.024-9.561-8.96-1.191-9.692,2.423-22.73a81.2,81.2,0,0,1,10.42-23.319q9.624-14.56,20.384-15.884,6.009-.736,6.581,3.915,0.8,6.5-6.709,13.073a31.365,31.365,0,0,1-17.2,7.769,48.571,48.571,0,0,1-6.566.216q2.364,4.827,6.92,4.267,4.263-.524,11.771-4.692a60.569,60.569,0,0,0,12.18-8.58,43.067,43.067,0,0,0,8.06-10.484q3.047-5.637,2.594-9.321-0.69-5.62-8.347-4.682-13.183,1.619-28.5,16.29a82.83,82.83,0,0,0-19.492,29.156q-6.906,17.082-5.121,31.621,1.584,12.893,12.924,11.5,13.181-1.619,29.808-21.665,11.4-13.7,10.262-23a11.174,11.174,0,0,0-1.952-4.68Q745.425,657.359,736.819,668.6Z"/>
+  <path id="WALLET" class="cls-4" d="M936.6,542.494L907.988,650.307a78.275,78.275,0,0,0-2.636,13.476h-0.391a79.366,79.366,0,0,0-2.344-13.086l-29.687-108.2H857.207L826.25,649.916a82.842,82.842,0,0,0-3.027,14.062h-0.489a70.609,70.609,0,0,0-2.343-14.062L790.605,542.494H772.539l41.016,140.039H832.6l29-102.539a72.422,72.422,0,0,0,2.539-14.062h0.39a64.028,64.028,0,0,0,2.246,14.257l28.809,102.344h19.238l39.551-140.039H936.6Zm93.068,0h-16.99L958.965,682.533h18.262l13.964-39.258h59.379l14.84,39.258h18.16Zm-33.01,86.035,21.78-59.668a52.815,52.815,0,0,0,2.24-9.375h0.39a58.167,58.167,0,0,0,2.15,9.375l21.98,59.668H996.66Zm180.18,39.16h-56.25V542.494h-16.41V682.533h72.66V667.689Zm94.14,0h-56.25V542.494h-16.41V682.533h72.66V667.689Zm95.7,0h-57.81V618.666h50.58V603.92h-50.58V557.338h54.68V542.494h-71.09V682.533h74.22V667.689Zm109.77-125.195h-97.17v14.844h40.33v125.2h16.41v-125.2h40.43V542.494Z"/>
+</svg>

@@ -79,7 +79,7 @@ function amount_add() {
 function emailValidation() {
     var form = document.getElementById("form1");
     var email = document.getElementById("EmailId").value;
-    var text = document.getElementById("text");
+    var text = document.getElementById("emailcheck");
     var pattern = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
     if (email.match(pattern)) {
@@ -119,7 +119,7 @@ function passwordCheck() {
     var form = document.getElementById("form1");
     var pass = document.getElementById("Password").value;
     var text = document.getElementById("text2");
-    var pattern = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+    var pattern = /^(?=.\d)(?=.[!@#$%^&])(?=.[a-z])(?=.*[A-Z]).{8,}$/;
 
     if (pass.match(pattern)) {
         text.innerHTML = "Valid Password";
@@ -151,4 +151,3 @@ function conPassCheck() {
         text.innerHTML = "";
     }
 }
-

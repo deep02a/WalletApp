@@ -1,4 +1,6 @@
-﻿body {
+﻿html, body {
+    height:100%;
+    width:100%;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -291,6 +293,67 @@ p {
     line-height: 1rem;
     color: rgba(156, 163, 175, 1);
 }
+
+/*MainPage*/
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #ACB1D6;
+    position: relative;
+}
+
+.img1 {
+    width:18em;
+}
+nav {
+    padding:0.1vw 0.005vw;
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+#nav-part2{
+    display:flex;
+    align-items:center;
+    gap:1vw;
+}
+
+    #nav-part2 h4 {
+        padding: 10px 20px;
+        border: 2px solid #000000b7;
+        border-radius: 50px;
+        font-weight: 600;
+        color: #000000;
+        position: relative;
+        transition: all ease 0.5s;
+        overflow:hidden;
+    }
+    #nav-part2 h4::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #16325B;
+        left: 0;
+        bottom: -100%;
+        border-radius: 50%;
+        transition: all ease 0.5s;
+    }
+    #nav-part2 h4:hover::after {
+        bottom: 0;
+        border-radius: 0;
+    }
+        #nav-part2 h4 a {
+            text-decoration: none;
+            color: #16325B;
+            z-index: 9;
+            position: relative;
+        }
+    #nav-part2 h4:hover a {
+        color: #FFEAD2;
+    }
+
 
 
 

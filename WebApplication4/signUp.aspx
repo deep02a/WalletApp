@@ -19,19 +19,20 @@
 		</div>
 		<div class="input-group">
 			<label for="EmailId">Email Id</label>
-            <asp:TextBox ID="EmailId" runat="server" onblur="emailValidation()" ></asp:TextBox>
+            <asp:TextBox ID="EmailId" runat="server" onblur="emailValidation()"></asp:TextBox>
+			<span id="emailcheck"></span>
 			<asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label><br />
-			<span id="text"></span>
+			
 		</div>
 		<div class="input-group">
 			<label for="PhoneNo">Phone Number</label>
-            <asp:TextBox ID="PhoneNo" runat="server" onblur="phoneNoVerification()"></asp:TextBox>
+            <asp:TextBox ID="PhoneNo" runat="server" onblur="phoneNoVerification()" ></asp:TextBox>
 			<asp:Label ID="Label2" runat="server" Text="Label" Visible="false"></asp:Label><br />
 			<span id="text1"></span>
 		</div>
 		<div class="input-group">
 			<label for="Password">Password</label>
-            <asp:TextBox ID="Password" runat="server" onblur="passwordCheck()"></asp:TextBox>
+            <asp:TextBox ID="Password" runat="server" onblur="passwordCheck()" ></asp:TextBox>
 			<span id="text2"></span>
 		</div>
 		<div class="input-group">
