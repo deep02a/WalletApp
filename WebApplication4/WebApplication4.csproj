@@ -78,7 +78,11 @@
     <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="WebImages\image %281%29.png" />
+    <Content Include="WebImages\image.png" />
+    <Content Include="WebImages\website.jpeg" />
     <Content Include="WebImages\logo.png.svg" />
+    <Content Include="WebImages\logo1.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LogIn.aspx.cs">
