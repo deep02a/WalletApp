@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>    
+     <script src="JavaScript.js"></script>
     <link rel="stylesheet" href="StyleSheet1.css"/>
 </head>
 <body>
@@ -37,5 +38,5 @@
     </div>
     
 </body>
-    <script src="JavaScript.js"></script>
+   
 </html>
