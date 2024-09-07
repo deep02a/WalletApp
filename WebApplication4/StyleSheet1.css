@@ -382,7 +382,7 @@ nav {
 }
 .slider-wrapper {
     position:relative;
-    max-width:48rem;
+    max-width:40rem;
     margin:0 auto;
 }
 .slider{
@@ -399,8 +399,8 @@ nav {
         flex: 1 0 100%;
         scroll-snap-align: start;
         object-fit: cover;
-        max-width: 1024px;
-        max-height: 576px;
+        max-width: 100%;
+        max-height: 100%;
         height: auto;
         width: auto;
     }
