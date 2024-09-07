@@ -41,15 +41,46 @@
                 </div>
             </div>
             <hr />
-            <div class="desc">
-                <h1>Why choose us?</h1>
-            </div>
-            <div class="info-wrapper">
-                <div class="info-container">
-
+            
+            <div class="info-wrapper1">
+                <div class="heading">
+                    <h1>Why choose us?</h1>
+                </div>
+                <div class="info-container1">
+                    <div class="ic-left">
+                        <img class="web-img" src="WebImages/document.png" alt="document png" />
+                    </div>
+                    <div class="ic-right">
+                        <h4>Upload your important document and get it from anywhere with ease.It is totally safe and trusted.</h4>
+                    </div>
+                </div>
+                <div class="info-container1">
+                    <div class="ic-left">
+                        <h4>Upload your important pictures and your closer ones and get it from anywhere with ease.It is totally safe and trusted.</h4>
+                    </div>
+                    <div class="ic-left"></div>
+                    <div class="ic-right">
+                        <img class="web-img" src="WebImages/icons8-photo-100.png" alt="image png" />
+                    </div>
+                </div>
+                <div class="info-container1">
+                    <div class="ic-left">
+                        <img class="web-img" src="WebImages/pay.png" alt="payment png" />
+                    </div>
+                    <div class="ic-right">
+                        <h4>Payment can also be done with upi.Just scan and pay.</h4>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="footer">
+        <div class="footer-div">
+            <h4><a href="signUp.aspx">Sign Up</a></h4>
+            <h4><a href="LogIn.aspx">Log In</a></h4>
+            <h4><a href="#">Contact Us</a></h4>
+        </div>
+        <h1>eWallet</h1>
     </div>
 </body>
 </html>
