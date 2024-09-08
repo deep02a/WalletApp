@@ -308,16 +308,14 @@ p {
 }
 
 .img1 {
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 26%;
+    max-height: 24%;
     height: auto;
     width: auto;
 }
 nav {
-    padding:0vw 0vw 2px 0px;
     width: 98%;
     display:flex;
-    align-items:center;
     justify-content:space-between;
 }
 
@@ -379,11 +377,13 @@ nav {
 }
 .container{
     padding:2rem;
+    display:flex;
+    justify-content:flex-end;
 }
 .slider-wrapper {
-    position:relative;
-    max-width:40rem;
-    margin:0 auto;
+    position: relative;
+    max-width: 75%;
+    margin: 0 auto;
 }
 .slider{
     display:flex;
