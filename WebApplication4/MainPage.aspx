@@ -4,7 +4,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <title></title> 
     <link rel="stylesheet" href="StyleSheet1.css" />
 </head>
 <body>
@@ -74,11 +77,16 @@
             </div>
         </div>
     </div>
+    <div class="fake"></div>
     <div id="footer">
         <div class="footer-div">
             <h4><a href="signUp.aspx">Sign Up</a></h4>
             <h4><a href="LogIn.aspx">Log In</a></h4>
             <h4><a href="#">Contact Us</a></h4>
+        </div>
+        <div class="footer-right">
+            <label>You can give us your email, for more news and updates...</label>
+            <input id="emailUpdates" type="text" placeholder="Enter your Email"/>
         </div>
         <h1>eWallet</h1>
     </div>
