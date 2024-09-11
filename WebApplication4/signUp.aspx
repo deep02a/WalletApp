@@ -5,27 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-	<script>
-        function emailValidation() {
-            alert("email");
-            var email = document.getElementById("EmailId").value;
-            var text = document.getElementById("emailcheck");
-            var pattern = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+	<script src="SignUpJs.js"></script>
 
-            if (email.match(pattern)) {
-                text.innerHTML = "Valid Email";
-                text.style.color = "#00ff00";
-            }
-            else {
-                text.innerHTML = "Please Enter valid Email";
-                text.style.color = "#ff0000";
-            }
-            if (email == "") {
-                text.innerHTML = "";
-            }
-        }
-    </script>
-    <link rel="stylesheet" href="StyleSheet1.css"/>
+    <link rel="stylesheet" href="SignUpLogInCss.css"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -40,18 +22,18 @@
 			<label for="EmailId">Email Id</label>
             <asp:TextBox ID="EmailId" runat="server" onblur="emailValidation()"></asp:TextBox>
 			<span id="emailcheck"></span>
-			<asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label>
+			<asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label><br />
 			
 		</div>
 		<div class="input-group">
 			<label for="PhoneNo">Phone Number</label>
-            <asp:TextBox ID="PhoneNo" runat="server" onblur="phoneNoVerification()" ></asp:TextBox>
-			<asp:Label ID="Label2" runat="server" Text="Label" Visible="false"></asp:Label>
+            <asp:TextBox ID="PhoneNo" runat="server" onblur="" ></asp:TextBox>
+			<asp:Label ID="Label2" runat="server" Text="Label" Visible="false"></asp:Label><br />
 			<span id="text1"></span>
 		</div>
 		<div class="input-group">
 			<label for="Password">Password</label>
-            <asp:TextBox ID="Password" runat="server" onblur="passwordCheck()" ></asp:TextBox>
+            <asp:TextBox ID="Password" runat="server" onblur="" ></asp:TextBox>
 			<span id="text2"></span>
 		</div>
 		<div class="input-group">
@@ -63,7 +45,7 @@
 				<a rel="noopener noreferrer" href="#">Forgot Password ?</a>
 			</div>
 		</div>
-        <asp:Button ID="Button1" runat="server" CssClass="sign" Text="Sign Up" OnClick="Button1_Click" />
+        <asp:Button ID="Button1" runat="server" CssClass="sign" Text="Sign Up" OnClick="Button1_Click" ClientEnabled="False" />
         
 		<div class="social-message">
 			<div class="line"></div>

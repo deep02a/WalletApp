@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LogIn.aspx" />
+    <Content Include="MainPageCss.css" />
     <Content Include="Pdf.aspx" />
     <Content Include="Global.asax" />
     <Content Include="gridview.aspx" />
@@ -73,6 +74,8 @@
     <Content Include="MainPage.aspx" />
     <Content Include="PassportPhotoUpload.aspx" />
     <Content Include="signUp.aspx" />
+    <Content Include="SignUpJs.js" />
+    <Content Include="SignUpLogInCss.css" />
     <Content Include="StyleSheet1.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
