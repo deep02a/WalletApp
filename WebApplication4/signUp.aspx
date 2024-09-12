@@ -27,14 +27,14 @@
 		</div>
 		<div class="input-group">
 			<label for="PhoneNo">Phone Number</label>
-            <asp:TextBox ID="PhoneNo" runat="server" onblur="" ></asp:TextBox>
+            <asp:TextBox ID="PhoneNo" runat="server" onblur="phoneNoCheck()" ></asp:TextBox>
 			<asp:Label ID="Label2" runat="server" Text="Label" Visible="false"></asp:Label><br />
-			<span id="text1"></span>
+			<span id="phonecheck"></span>
 		</div>
 		<div class="input-group">
 			<label for="Password">Password</label>
-            <asp:TextBox ID="Password" runat="server" onblur="" ></asp:TextBox>
-			<span id="text2"></span>
+            <asp:TextBox ID="Password" runat="server" onblur="conPassCheck()"></asp:TextBox>
+			<span id="passValid"></span>
 		</div>
 		<div class="input-group">
 			<label for="ConfirmPassword">Confirm Password</label>

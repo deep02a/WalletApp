@@ -1,9 +1,9 @@
 ﻿
 let flag = 0;
 function emailValidation() {
-    var email = document.getElementById("EmailId").value;
-    var text = document.getElementById("emailcheck");
-    var pattern = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    const email = document.getElementById("EmailId").value;
+    const text = document.getElementById("emailcheck");
+    const pattern = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
     if (email.match(pattern)) {
         text.innerHTML = "Valid Email";
@@ -19,12 +19,27 @@ function emailValidation() {
     }
 }
 
-function conPassCheck() {
-    var pass = document.getElementById("Password").value;
-    var conpass = document.getElementById("ConfirmPassword").value;
-    var text = document.getElementById("text3");
+function phoneNoCheck() {
+    alert("hello");
+    /*var phoneNo = document.getElementById("PhoneNo").value;
+    var phonecheck = document.getElementById("phonecheck");
+    var pattern1 = /^[\+]?[0-9]{0,3}\W?+[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
 
-    if (conpass.match(pass)) {
+    if (phoneNo.match(pattern1)) {
+        phonecheck.innerHTML = "Valid Phone Number";
+    }
+    else {
+        phonecheck.innerHTML = " Please Enter Valid Phone Number";
+    }*/
+}
+
+
+function conPassCheck() {
+    const pass = document.getElementById("Password").value;
+    const conpass = document.getElementById("ConfirmPassword").value;
+    const text = document.getElementById("text3");
+
+    if (conpass==pass && pass==conpass) {
         text.innerHTML = "Valid Password";
         text.style.color = "#00ff00";
         flag++;
@@ -33,9 +48,10 @@ function conPassCheck() {
         text.innerHTML = "Please Enter same password";
         text.style.color = "#ff0000";
     }
-    if (pass == "") {
+    if (pass == "" || conpass == "") {
         text.innerHTML = "";
     }
+  
 }
 
 if (flag == 5) {
