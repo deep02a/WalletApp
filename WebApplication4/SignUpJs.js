@@ -19,20 +19,6 @@ function emailValidation() {
     }
 }
 
-function phoneNoCheck() {
-    alert("hello");
-    /*var phoneNo = document.getElementById("PhoneNo").value;
-    var phonecheck = document.getElementById("phonecheck");
-    var pattern1 = /^[\+]?[0-9]{0,3}\W?+[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
-
-    if (phoneNo.match(pattern1)) {
-        phonecheck.innerHTML = "Valid Phone Number";
-    }
-    else {
-        phonecheck.innerHTML = " Please Enter Valid Phone Number";
-    }*/
-}
-
 
 function conPassCheck() {
     const pass = document.getElementById("Password").value;
@@ -52,6 +38,36 @@ function conPassCheck() {
         text.innerHTML = "";
     }
   
+}
+function togglePasswordVisibility() {
+
+    var x = document.getElementById("Password");
+    
+
+    if (x.type === "password") {
+
+        x.type = "text";
+
+    } else {
+
+        x.type = "password";
+
+    }
+}
+
+function togglePasswordVisibility1() {
+
+    var y = document.getElementById("ConfirmPassword");
+
+    if (y.type === "password") {
+
+        y.type = "text";
+
+    } else {
+
+        y.type = "password";
+
+    }
 }
 
 if (flag == 5) {

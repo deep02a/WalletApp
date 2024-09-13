@@ -27,18 +27,20 @@
 		</div>
 		<div class="input-group">
 			<label for="PhoneNo">Phone Number</label>
-            <asp:TextBox ID="PhoneNo" runat="server" onblur="phoneNoCheck()" ></asp:TextBox>
+            <asp:TextBox ID="PhoneNo" runat="server" type="number" ></asp:TextBox>
 			<asp:Label ID="Label2" runat="server" Text="Label" Visible="false"></asp:Label><br />
 			<span id="phonecheck"></span>
 		</div>
 		<div class="input-group">
 			<label for="Password">Password</label>
-            <asp:TextBox ID="Password" runat="server" onblur="conPassCheck()"></asp:TextBox>
+            <asp:TextBox ID="Password" runat="server" type="password" ></asp:TextBox>
+			<input type="checkbox" for="Password" onclick="togglePasswordVisibility()"/>
 			<span id="passValid"></span>
 		</div>
 		<div class="input-group">
 			<label for="ConfirmPassword">Confirm Password</label>
-            <asp:TextBox ID="ConfirmPassword" runat="server" onblur="conPassCheck()"></asp:TextBox>
+            <asp:TextBox ID="ConfirmPassword" runat="server" type="password" onblur="conPassCheck()"></asp:TextBox>
+			<input type="checkbox" for="ConfirmPassword" onclick="togglePasswordVisibility1()"/>
 			<span id="text3"></span>
 
 			<div class="forgot">
