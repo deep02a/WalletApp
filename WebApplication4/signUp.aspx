@@ -20,7 +20,7 @@
 		</div>
 		<div class="input-group">
 			<label for="EmailId">Email Id</label>
-            <asp:TextBox ID="EmailId" runat="server" onblur="emailValidation()"></asp:TextBox>
+            <asp:TextBox ID="EmailId" runat="server" onkeydown="emailValidation()"></asp:TextBox>
 			<span id="emailcheck"></span>
 			<asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label><br />
 			
@@ -34,20 +34,21 @@
 		<div class="input-group">
 			<label for="Password">Password</label>
             <asp:TextBox ID="Password" runat="server" type="password" ></asp:TextBox>
-			<input type="checkbox" for="Password" onclick="togglePasswordVisibility()"/>
+			<label class="checkbxlabel" for="checkbox1"><input type="checkbox" id="checkbox1" onclick="togglePasswordVisibility()"/>Show password</label>
 			<span id="passValid"></span>
 		</div>
+		<div class="fake"></div>
 		<div class="input-group">
 			<label for="ConfirmPassword">Confirm Password</label>
             <asp:TextBox ID="ConfirmPassword" runat="server" type="password" onblur="conPassCheck()"></asp:TextBox>
-			<input type="checkbox" for="ConfirmPassword" onclick="togglePasswordVisibility1()"/>
+			<label class="checkbxlabel" for="checkbox2"><input type="checkbox" id="checkbox2" onclick="togglePasswordVisibility1()"/>Show password</label>
 			<span id="text3"></span>
-
+        <div class="fake"></div>
 			<div class="forgot">
 				<a rel="noopener noreferrer" href="#">Forgot Password ?</a>
 			</div>
 		</div>
-        <asp:Button ID="Button1" runat="server" CssClass="sign" Text="Sign Up" OnClick="Button1_Click" ClientEnabled="False" />
+        <asp:Button ID="Button1" runat="server" CssClass="sign" Text="Sign Up" OnClick="Button1_Click" OnClientClick="nullcheck" />
         
 		<div class="social-message">
 			<div class="line"></div>

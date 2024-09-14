@@ -4,6 +4,16 @@
     padding: 0px;
 }
 
+input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+}
+
+label {
+    display: block;
+} 
+
 .form-container1 {
     overflow: hidden;
     margin: auto;
@@ -50,6 +60,19 @@
         .input-group input:focus {
             border-color: rgba(167, 139, 250);
         }
+        .input-group input[type="checkbox"] {
+            width: auto;
+        }
+
+.checkbxlabel {
+    float: right;
+}
+.fake {
+    width: 320px;
+    height:25px;
+    background-color:transparent;
+}
+
 
 .forgot {
     display: flex;
