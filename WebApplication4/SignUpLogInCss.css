@@ -12,7 +12,8 @@ input[type=checkbox] {
 
 label {
     display: block;
-} 
+}
+
 
 .form-container1 {
     overflow: hidden;
@@ -46,6 +47,7 @@ label {
         color: rgba(156, 163, 175, 1);
         margin-bottom: 4px;
     }
+
 
     .input-group input {
         width: 89%;

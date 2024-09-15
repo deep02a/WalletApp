@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -26,16 +27,14 @@ namespace WebApplication4
                 String query = "insert into details values('" + Username.Text + "','" + EmailId.Text + "','" + ConfirmPassword.Text + "','" + z + "','" + PhoneNo.Text + "')";
                 SqlCommand cmd = new SqlCommand(query, con);
                 cmd.ExecuteNonQuery();
-                Label1.Visible = false;
-                Label2.Visible = false;
+                Response.Write("<script>alert('Succesfull');window.location = 'gridview.aspx';</script>");
             }
-            catch {
+            catch (SqlException ex) when (ex.Number == 2627)
+            {
                 Label1.Visible = true;
-                Label1.Text = "email already exists";
-                Label1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#FF0000");
-                Label2.Visible = true;
-                Label2.Text = "phoneNo already exists";
-                Label2.ForeColor = System.Drawing.ColorTranslator.FromHtml("#FF0000");
+                Label1.ForeColor = System.Drawing.Color.Red;
+                Label1.Text = "Phone Number OR Email is already there is our database please change it!";
+
             }
             finally { 
                 con.Close();

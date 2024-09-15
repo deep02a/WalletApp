@@ -20,15 +20,14 @@
 		</div>
 		<div class="input-group">
 			<label for="EmailId">Email Id</label>
-            <asp:TextBox ID="EmailId" runat="server" onkeydown="emailValidation()"></asp:TextBox>
+            <asp:TextBox ID="EmailId" runat="server" onkeydown="emailValidation()"></asp:TextBox><br />
 			<span id="emailcheck"></span>
-			<asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label><br />
+			
 			
 		</div>
 		<div class="input-group">
 			<label for="PhoneNo">Phone Number</label>
-            <asp:TextBox ID="PhoneNo" runat="server" type="number" ></asp:TextBox>
-			<asp:Label ID="Label2" runat="server" Text="Label" Visible="false"></asp:Label><br />
+            <asp:TextBox ID="PhoneNo" runat="server" type="number" ></asp:TextBox><br />
 			<span id="phonecheck"></span>
 		</div>
 		<div class="input-group">
@@ -49,6 +48,10 @@
 			</div>
 		</div>
         <asp:Button ID="Button1" runat="server" CssClass="sign" Text="Sign Up" OnClick="Button1_Click" OnClientClick="nullcheck" />
+		<div class="fake"></div>
+		<div class="input-group">
+			<asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label>
+		</div>
         
 		<div class="social-message">
 			<div class="line"></div>
