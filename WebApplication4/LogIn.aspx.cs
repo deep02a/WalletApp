@@ -18,13 +18,19 @@ namespace WebApplication4
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            con.Open();
-            String sql;
-            sql = "select * from details where email='"+ Email.Text+ "' and pass='"+ Password.Text+ "'";
-            SqlCommand cmd = new SqlCommand(sql, con);
-            cmd.ExecuteNonQuery();
-            con.Close();
-            
+            try
+            {
+                con.Open();
+                String sql;
+                sql = "select * from details where email='" + Email.Text + "' and pass='" + Password.Text + "'";
+                SqlCommand cmd = new SqlCommand(sql, con);
+                cmd.ExecuteNonQuery();
+            }
+            catch { }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }

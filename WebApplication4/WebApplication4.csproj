@@ -83,6 +83,7 @@
     <Content Include="WebImages\icons8-photo-100.png" />
     <Content Include="WebImages\image %281%29.png" />
     <Content Include="WebImages\image.png" />
+    <Content Include="WebImages\LOGO.png" />
     <Content Include="WebImages\pay.png" />
     <Content Include="WebImages\paySVG.svg" />
     <Content Include="WebImages\photoSVG.svg" />

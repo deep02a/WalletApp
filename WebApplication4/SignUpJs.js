@@ -70,34 +70,3 @@ function togglePasswordVisibility1() {
     }
 }
 
-function nullcheck() {
-    const username = document.getElementById("Username").value;
-    const email = document.getElementById("EmailId").value;
-    const phoneno = document.getElementById("PhoneNo").value;
-    const password = document.getElementById("ConfirmPassword").value;
-
-    if (username != "") {
-        flag++;
-    }
-    else if (email != "") {
-        flag++;
-    }
-    else if (phoneno != "") {
-        flag++;
-    }
-    else if (password != "") {
-        flag++;
-    }
-    else {
-        alert("enter all details");
-    }
-
-    if (flag > 2) {
-        alert("Data Uploaded");
-        document.getElementById("Button1").disabled = false;
-    }
-    else {
-        alert("enter all details");
-        document.getElementById("Button1").disabled = true;
-    }
-}

@@ -36,7 +36,7 @@
 		</button>
 	</div>
 	<p class="signup">Don't have an account?
-		<a rel="noopener noreferrer" href="WebForm2.aspx" class="">Sign up</a>
+		<a rel="noopener noreferrer" href="signUp.aspx" class="">Sign up</a>
 	</p>
         </div>
     </form>

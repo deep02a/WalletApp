@@ -15,14 +15,19 @@ hr {
     background-color: #BBE9FF;
     position: relative;
 }
+.imgdiv {
+    position: relative;
+    max-width: 65%;
+    display:block;
+}
 
 .img1 {
-    max-width: 26%;
-    max-height: 24%;
+    max-width: 15%;
+    max-height: auto;
     height: auto;
     width: auto;
+    padding-bottom:7vh;
     position: relative;
-    right: 80px;
 }
 
 nav {

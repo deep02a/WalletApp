@@ -14,7 +14,11 @@
     <div id="main">
         <div id="page1">
             <nav>
-                <img src="WebImages/logo1.png" class="img1" alt="logo"/>
+                <div class="imgdiv" >
+                    <img src="WebImages/LOGO.png" class="img1"  alt="logo"/>
+                </div>
+                    
+                
                 <div id="nav-part2">
                     <h4><a href="signUp.aspx">Sign Up</a></h4>
                     <h4><a href="LogIn.aspx">Log In</a></h4>

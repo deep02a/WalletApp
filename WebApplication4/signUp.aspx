@@ -43,15 +43,21 @@
 			<label class="checkbxlabel" for="checkbox2"><input type="checkbox" id="checkbox2" onclick="togglePasswordVisibility1()"/>Show password</label>
 			<span id="text3"></span>
         <div class="fake"></div>
-			<div class="forgot">
-				<a rel="noopener noreferrer" href="#">Forgot Password ?</a>
-			</div>
+			<div class="fake"></div>
 		</div>
+        <asp:Button ID="Button1" runat="server" CssClass="sign" Text="Sign Up" OnClick="Button1_Click" />
+		<div class="fake"></div>
+		<div class="input-group">
+			<asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label>
+		</div>
+<<<<<<< Updated upstream
         <asp:Button ID="Button1" runat="server" CssClass="sign" Text="Sign Up" OnClick="Button1_Click" OnClientClick="nullcheck" />
 		<div class="fake"></div>
 		<div class="input-group">
 			<asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label>
 		</div>
+=======
+>>>>>>> Stashed changes
         
 		<div class="social-message">
 			<div class="line"></div>
@@ -66,7 +72,7 @@
 			</button>
 		</div>
 		<p class="signup">Already Have an account?
-			<a rel="noopener noreferrer" href="Log in.aspx" class="">Log in</a>
+			<a rel="noopener noreferrer" href="LogIn.aspx" class="">Log in</a>
 		</p>
 	</div>
 		
