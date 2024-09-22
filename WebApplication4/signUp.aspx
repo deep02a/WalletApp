@@ -50,14 +50,7 @@
 		<div class="input-group">
 			<asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label>
 		</div>
-<<<<<<< Updated upstream
-        <asp:Button ID="Button1" runat="server" CssClass="sign" Text="Sign Up" OnClick="Button1_Click" OnClientClick="nullcheck" />
-		<div class="fake"></div>
-		<div class="input-group">
-			<asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label>
-		</div>
-=======
->>>>>>> Stashed changes
+
         
 		<div class="social-message">
 			<div class="line"></div>

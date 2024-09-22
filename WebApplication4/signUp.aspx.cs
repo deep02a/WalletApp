@@ -29,10 +29,9 @@ namespace WebApplication4
                 String query1 = "insert into essentials values('" + EmailId.Text + "','" + PhoneNo.Text + "','"+z+"')";
                 SqlCommand cmd1 = new SqlCommand(query1, con);
                 cmd.ExecuteNonQuery();
-<<<<<<< Updated upstream
-=======
+
                 cmd1.ExecuteNonQuery();
->>>>>>> Stashed changes
+
                 Response.Write("<script>alert('Succesfull');window.location = 'gridview.aspx';</script>");
             }
             catch (SqlException ex) when (ex.Number == 2627)
@@ -40,10 +39,7 @@ namespace WebApplication4
                 Label1.Visible = true;
                 Label1.ForeColor = System.Drawing.Color.Red;
                 Label1.Text = "Phone Number OR Email is already there is our database please change it!";
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
             }
             finally { 
                 con.Close();
