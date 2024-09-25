@@ -65,6 +65,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ForgetPassword.aspx" />
     <Content Include="LogIn.aspx" />
     <Content Include="MainPageCss.css" />
     <Content Include="Pdf.aspx" />
@@ -92,6 +93,13 @@
     <Content Include="WebImages\logo1.png" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ForgetPassword.aspx.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.aspx.designer.cs">
+      <DependentUpon>ForgetPassword.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.aspx.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

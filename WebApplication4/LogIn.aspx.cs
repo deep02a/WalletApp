@@ -19,13 +19,6 @@ namespace WebApplication4
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            
-                
-                
-                
-                
-
-
             try
             {
                 con.Open();

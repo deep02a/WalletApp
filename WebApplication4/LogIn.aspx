@@ -19,7 +19,7 @@
 	            <label for="Password">Password</label>
                 <asp:TextBox ID="Password" runat="server"></asp:TextBox>
 	            <div class="forgot">
-		            <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
+		            <a rel="noopener noreferrer" href="ForgetPassword.aspx">Forgot Password ?</a>
 	            </div>
             </div>
             <asp:Button ID="Button1" CssClass="sign" runat="server" Text="Log In" OnClick="Button1_Click"/>
