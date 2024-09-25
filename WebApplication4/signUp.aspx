@@ -47,7 +47,7 @@
 		</div>
         <asp:Button ID="Button1" runat="server" CssClass="sign" Text="Sign Up" OnClick="Button1_Click" />
 		<div class="fake"></div>
-		<div class="input-group">
+		<div class="labelclass" >
 			<asp:Label ID="Label1" runat="server" Text="Label" Visible="false"></asp:Label>
 		</div>
 

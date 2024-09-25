@@ -1,5 +1,7 @@
 ﻿
-let flag = 0;
+
+const btn = document.getElementById("#<% Button1.ClientID %>");
+
 function emailValidation() {
     const email = document.getElementById("EmailId").value;
     const text = document.getElementById("emailcheck");
@@ -8,11 +10,11 @@ function emailValidation() {
     if (email.match(pattern)) {
         text.innerHTML = "Valid Email";
         text.style.color = "#00ff00";
-        flag++;
     }
     else {
         text.innerHTML = "Please Enter valid Email";
         text.style.color = "#ff0000";
+        btn.disabled = true;
     }
     if (email == "") {
         text.innerHTML = "";
@@ -28,11 +30,11 @@ function conPassCheck() {
     if (conpass==pass && pass==conpass) {
         text.innerHTML = "Valid Password";
         text.style.color = "#00ff00";
-        flag++;
     }
     else {
         text.innerHTML = "Please Enter same password";
         text.style.color = "#ff0000";
+        btn.disabled = true;
     }
     if (pass == "" || conpass == "") {
         text.innerHTML = "";

@@ -21,18 +21,26 @@ namespace WebApplication4
         {
             try
             {
-                con.Open();
-                Random x = new Random();
-                int z = x.Next(100000, 500000);
-                String query = "insert into details values('" + Username.Text + "','" + EmailId.Text + "','" + ConfirmPassword.Text + "','" + PhoneNo.Text + "')";
-                SqlCommand cmd = new SqlCommand(query, con);
-                String query1 = "insert into essentials values('" + EmailId.Text + "','" + PhoneNo.Text + "','"+z+"')";
-                SqlCommand cmd1 = new SqlCommand(query1, con);
-                cmd.ExecuteNonQuery();
+                if (string.IsNullOrEmpty(Username.Text) || string.IsNullOrEmpty(EmailId.Text) || string.IsNullOrEmpty(ConfirmPassword.Text) || string.IsNullOrEmpty(PhoneNo.Text))
+                {
+                    Label1.Visible = true;
+                    Label1.ForeColor = System.Drawing.Color.Red;
+                    Label1.Text = "Please fill all the fields";
+                }
+                else
+                {
+                    con.Open();
+                    Random x = new Random();
+                    int z = x.Next(100000, 500000);
+                    String query = "insert into details values('" + Username.Text + "','" + EmailId.Text + "','" + ConfirmPassword.Text + "','" + PhoneNo.Text + "')";
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    String query1 = "insert into essentials values('" + EmailId.Text + "','" + PhoneNo.Text + "','" + z + "')";
+                    SqlCommand cmd1 = new SqlCommand(query1, con);
+                    cmd.ExecuteNonQuery();
+                    cmd1.ExecuteNonQuery();
+                    Response.Write("<script>alert('Succesfull');window.location = 'gridview.aspx';</script>");
+                }
 
-                cmd1.ExecuteNonQuery();
-
-                Response.Write("<script>alert('Succesfull');window.location = 'gridview.aspx';</script>");
             }
             catch (SqlException ex) when (ex.Number == 2627)
             {

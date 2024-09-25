@@ -22,7 +22,7 @@
 		            <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
 	            </div>
             </div>
-            <asp:Button ID="Button1" CssClass="sign" runat="server" Text="Log_In" OnClick="Button1_Click"/>
+            <asp:Button ID="Button1" CssClass="sign" runat="server" Text="Log In" OnClick="Button1_Click"/>
             	<div class="social-message">
 		<div class="line"></div>
 		<p class="message">Login with social accounts</p>
