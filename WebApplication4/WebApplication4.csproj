@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ForgetPassword.aspx" />
+    <Content Include="gridview.css" />
     <Content Include="LogIn.aspx" />
     <Content Include="MainPageCss.css" />
     <Content Include="Pdf.aspx" />

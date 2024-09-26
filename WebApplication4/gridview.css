@@ -1,0 +1,24 @@
+﻿a{
+    text-decoration:none;
+}
+
+header{
+    width:100%;
+    height:10dvh;
+    background-color:aqua;
+    border-radius:1rem;
+}
+.common {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .common div {
+        border: 3px solid black;
+    }
+
+#GridView1{
+    padding:10px;
+}
+   
